@@ -17,5 +17,27 @@ using std::endl;
 
 int main()
 {
-	return 0;
-}
+ int n; // user input
+
+ while(cin >> n){
+  if(n == 2){
+   cout << 1 << '\n';  //Specific case for returning 1 if n=2.
+  }
+  else if(n%2 == 0){  //n is an even number hence it cant be prime.
+   cout << 0 << '\n';
+  }
+  else if(n%2 != 0){  //n is an odd number and is potentially a prime number.
+    for(int i = 2; i <= n-1; i++){
+     if(n%i == 0){
+      cout << 0 << '\n';
+      break;
+     }
+     if(i == n-1){
+      cout << 1 << '\n';
+      break;
+     }
+    }
+    }
+   }
+  }
+ }

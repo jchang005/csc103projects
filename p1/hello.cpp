@@ -1,3 +1,23 @@
+#include <iostream>
+#include <string>
+using std::cin;
+using std::cout;
+using std::string;
+
+int main()
+{
+ string name;
+ string relative;
+
+ cout << "Enter your name: " << '\n';
+ getline(cin, name);
+ cout << "Enter a relative: " << '\n';
+ getline(cin, relative);
+ cout << "My name is " << name << ". You killed my " << relative << ". Prepare to die.";
+
+ return 0;
+}
+
 /*
  * CSc103 Project 1: (hello_world++)
  * See readme.html for details.
